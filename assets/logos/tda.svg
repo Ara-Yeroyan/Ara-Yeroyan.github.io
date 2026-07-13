@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M50 3.5 L84.9 23.6 A7.5 7.5 0 0 1 88.7 30.1 L88.7 69.9 A7.5 7.5 0 0 1 84.9 76.4 L50 96.5 L15.1 76.4 A7.5 7.5 0 0 1 11.3 69.9 L11.3 30.1 A7.5 7.5 0 0 1 15.1 23.6 Z" fill="#161618"/>
+  <path d="M50 14.5 L79.1 31.3 A3 3 0 0 1 80.6 33.9 L80.6 66.1 A3 3 0 0 1 79.1 68.7 L50 85.5 L20.9 68.7 A3 3 0 0 1 19.4 66.1 L19.4 33.9 A3 3 0 0 1 20.9 31.3 Z" fill="#f1efec"/>
+  <text x="50" y="64" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="31" text-anchor="middle" letter-spacing="-2.5"><tspan fill="#161618">T</tspan><tspan fill="#e01f27">D</tspan></text>
+</svg>

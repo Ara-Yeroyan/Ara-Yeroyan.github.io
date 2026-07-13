@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Ara Yeroyan, CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#191A1D; --muted:#484951; --soft:#7c7c75; --accent:#7A2E43;
+    --hair:#d9d3c6; --bg:#ffffff;
+    --serif:'Fraunces',Georgia,serif; --sans:'Inter',-apple-system,system-ui,sans-serif; --mono:'JetBrains Mono',monospace;
+  }
+  @page{ size:A4; margin:8mm 13mm; }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font-family:var(--sans);font-size:9pt;line-height:1.4;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  a{color:var(--accent);text-decoration:none;}
+
+  header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid var(--ink);padding-bottom:9pt;}
+  h1{font-family:var(--serif);font-weight:500;font-size:26pt;line-height:1;margin:0;letter-spacing:-.01em;}
+  .role{font-family:var(--mono);font-size:7.8pt;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin-top:6pt;}
+  .contact{font-family:var(--mono);font-size:7.4pt;line-height:1.75;text-align:right;color:var(--muted);}
+  .contact a{color:var(--muted);}
+  .contact b{color:var(--ink);}
+
+  .summary{font-size:9.1pt;line-height:1.46;color:var(--ink);margin:8pt 0 2pt;}
+  .summary b{color:var(--ink);}
+
+  .grid{display:grid;grid-template-columns:1.32fr 1fr;gap:0 24pt;}
+  section{margin-top:7pt;break-inside:avoid;}
+  h2{font-family:var(--mono);font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+    margin:0 0 5pt;padding-bottom:2.5pt;border-bottom:1px solid var(--hair);}
+
+  .job{margin-bottom:5pt;break-inside:avoid;}
+  .job .top{display:flex;justify-content:space-between;align-items:baseline;gap:8pt;}
+  .job .org{font-family:var(--serif);font-size:11pt;font-weight:500;}
+  .job .when{font-family:var(--mono);font-size:7pt;color:var(--soft);white-space:nowrap;letter-spacing:.02em;}
+  .job .pos{font-size:8.6pt;color:var(--muted);font-style:italic;}
+  .job ul{margin:2pt 0 0;padding-left:11pt;}
+  .job li{font-size:8.4pt;color:var(--muted);margin-bottom:0.5pt;line-height:1.38;}
+  .job li b{color:var(--ink);}
+
+  .pub{margin-bottom:5pt;break-inside:avoid;}
+  .pub .venue{font-family:var(--mono);font-size:7pt;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);}
+  .pub .t{font-family:var(--serif);font-size:9.6pt;line-height:1.3;margin:1pt 0;}
+  .pub .a{font-size:7.8pt;color:var(--soft);}
+
+  .row{display:flex;justify-content:space-between;gap:8pt;margin-bottom:4pt;break-inside:avoid;}
+  .row .l b{font-family:var(--serif);font-size:9.6pt;font-weight:500;display:block;line-height:1.25;}
+  .row .l span{font-size:8.2pt;color:var(--muted);}
+  .row .r{font-family:var(--mono);font-size:7pt;color:var(--soft);white-space:nowrap;letter-spacing:.02em;text-align:right;}
+
+  .chips{display:flex;flex-wrap:wrap;gap:4pt;}
+  .chip{font-family:var(--mono);font-size:7.2pt;border:1px solid var(--hair);border-radius:20pt;padding:2pt 7pt;color:var(--muted);}
+  .langs{font-size:8.6pt;color:var(--muted);} .langs b{color:var(--ink);font-weight:500;}
+  .full{grid-column:1 / -1;}
+  .idline{font-family:var(--mono);font-size:7pt;color:var(--soft);margin-bottom:6pt;}
+  .idline a{color:var(--accent);}
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Ara Yeroyan</h1>
+      <div class="role">Senior AI Engineer · LLMs, GenAI, Voice AI · Agentic AI &amp; RAG</div>
+    </div>
+    <div class="contact">
+      <div><b>ar23yeroyan@gmail.com</b></div>
+      <div>Yerevan, Armenia → Los Angeles</div>
+      <div><a href="https://www.linkedin.com/in/ara-yeroyan/">linkedin.com/in/ara-yeroyan</a></div>
+      <div><a href="https://github.com/Ara-Yeroyan">github.com/Ara-Yeroyan</a></div>
+    </div>
+  </header>
+
+  <p class="summary">Senior AI Engineer with <b>6+ years</b> building end-to-end ML and GenAI across <b>voice, retrieval, and applied NLP</b>, including published work with the <b>NVIDIA NeMo team</b>. I design, evaluate, and deploy systems that must hold up in production: LLM-powered products, voice agents, RAG pipelines, multi-agent orchestration, and the evaluation/observability that proves they work. Peer-reviewed at SIGIR and INTERSPEECH; Google Summer of Code mentor.</p>
+
+  <div class="grid">
+    <div>
+      <section>
+        <h2>Professional Experience</h2>
+        <div class="job">
+          <div class="top"><span class="org">ServiceTitan</span><span class="when">Sep 2024 - Present</span></div>
+          <div class="pos">Senior AI Engineer, Research · Yerevan</div>
+          <ul>
+            <li>LLM evaluation &amp; monitoring pipelines for voice agents, quality, safety, drift, regressions.</li>
+            <li>Optimized LLM inference for a <b>3.2× performance improvement</b>; built LLM-based reporting over high-volume operational data.</li>
+            <li>Defined and operationalized customer-facing KPIs tied to revenue.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="top"><span class="org">Akryl Digital <span style="font-weight:400;font-size:9pt;">(Client: GIZ)</span></span><span class="when">Aug 2025 - Apr 2026</span></div>
+          <div class="pos">ML Architect · Consultant · Hamburg (remote)</div>
+          <ul>
+            <li>Production multi-agent chatbot systems for GIZ, RAG pipelines at <b>sub-2-second latency</b>; primary technical liaison.</li>
+            <li>Built visual RAG transforming PDFs into high-resolution images with multi-vector retrieval and token-level filtering.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="top"><span class="org">Plat.ai</span><span class="when">Sep 2022 - Mar 2025</span></div>
+          <div class="pos">Senior ML Engineer · Consultant · Yerevan</div>
+          <ul>
+            <li>Built Plat.ai's AutoML and AdvancedML products with built-in explainability and interpretability.</li>
+            <li>Domain-specific features for financial ML; <b>+17% F1</b> for banking and insurance clients.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="top"><span class="org">yess.ai <span style="font-weight:400;font-size:9pt;">(YC-backed)</span></span><span class="when">Jan - Jun 2024</span></div>
+          <div class="pos">Senior NLP Engineer · Palo Alto (remote)</div>
+          <ul>
+            <li>Real-time voice assistant handling live calls with external tools for appointment booking/cancellation.</li>
+            <li>Offline sales-assistant workflows using tree-of-thought and self-reflection agent patterns.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="top"><span class="org">EPAM Systems</span><span class="when">Jun - Sep 2024</span></div>
+          <div class="pos">Senior ML Engineer (enterprise retail/fashion) · Yerevan</div>
+          <ul>
+            <li>Real-time multimodal recommendation MVP (“Fashion Assistant”) for a major enterprise client.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="top"><span class="org">Podcastle</span><span class="when">Jul 2021 - Aug 2022</span></div>
+          <div class="pos">Machine Learning Specialist · Yerevan</div>
+          <ul>
+            <li>Audio synthesis &amp; enhancement, voice cloning, DSP; led data-collection and training/serving pipelines.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="top"><span class="org">Earlier</span><span class="when">2020 - 2024</span></div>
+          <div class="pos">Lecturer · Armenian Code Academy&nbsp; ·&nbsp; ML at Funday, FAST Foundation / CYNORA, Hero House</div>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <section>
+        <h2>Publications</h2>
+        <div class="idline">ORCID <a href="https://orcid.org/0009-0009-3605-9702">0009-0009-3605-9702</a> · Google Scholar <a href="https://scholar.google.com/citations?user=d8If8-gAAAAJ">d8If8-gAAAAJ</a></div>
+        <div class="pub">
+          <div class="venue">SIGIR 2026 · Accepted</div>
+          <div class="t">Visual RAG Toolkit: Scaling Multi-Vector Visual Retrieval with Training-Free Pooling and Multi-Stage Search</div>
+          <div class="a"><b style="color:var(--ink)">Yeroyan, A.</b> · doi.org/10.1145/3805712.3808383 · arXiv:2602.12510</div>
+        </div>
+        <div class="pub">
+          <div class="venue">INTERSPEECH 2025 · with NVIDIA NeMo</div>
+          <div class="t">From Scarcity to Sufficiency: A Speech-Recognition Pipeline for Zero-Resource Languages</div>
+          <div class="a">Karpov, N., Kostandian, S., … <b style="color:var(--ink)">Yeroyan, A.</b>, et al.</div>
+        </div>
+        <div class="pub">
+          <div class="venue">Preprint · arXiv, Jan 2025</div>
+          <div class="t">Methods to Increase the Amount of Data for Speech Recognition for Low-Resource Languages</div>
+          <div class="a">Ayrapetyan, A., Kostandian, S., <b style="color:var(--ink)">Yeroyan, A.</b>, et al. · arXiv:2501.14788</div>
+        </div>
+        <div class="pub">
+          <div class="venue">Preprint · arXiv, Jun 2024</div>
+          <div class="t">Enabling ASR for Low-Resource Languages: A Comprehensive Dataset Creation Approach</div>
+          <div class="a"><b style="color:var(--ink)">Yeroyan, A.</b>, Karpov, N., et al. · arXiv:2406.01446</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="row"><div class="l"><b>MSBA, UCLA (Anderson)</b><span>STEM-designated · from Sept 2026</span></div><div class="r">Class of 2027</div></div>
+        <div class="row"><div class="l"><b>BSc Data Science, American University of Armenia</b><span>GPA 3.85 / 4.00 · top 1% of cohort</span></div><div class="r">2020 - '24</div></div>
+      </section>
+
+      <section>
+        <h2>Honors &amp; Awards</h2>
+        <div class="row"><div class="l"><b>Presidential Award, Best Bachelor Student in the field of IT in Armenia</b><span>Republic of Armenia &amp; Synopsys · head-of-state recognition</span></div><div class="r">2024</div></div>
+        <div class="row"><div class="l"><b>Silicon Valley Exchange Track</b><span>Palo Alto / Sunnyvale, California</span></div><div class="r">2023</div></div>
+        <div class="row"><div class="l"><b>Google Summer of Code, Mentor (DBpedia)</b></div><div class="r">2026</div></div>
+        <div class="row"><div class="l"><b>GMAT 720</b></div><div class="r"></div></div>
+      </section>
+
+      <section>
+        <h2>Key Expertise</h2>
+        <div class="langs" style="line-height:1.5;">LLMs · GenAI · Agentic AI · RAG &amp; Retrieval · Voice AI &amp; Applied NLP · LLM Eval &amp; Observability · Multi-agent orchestration · MLOps · Low-resource speech / ASR · Python</div>
+      </section>
+    </div>
+
+    <section class="full">
+      <h2>Languages</h2>
+      <div class="langs"><b>Armenian</b>, native · <b>English</b>, C1 · <b>Russian</b>, C1</div>
+    </section>
+  </div>
+</body>
+</html>
